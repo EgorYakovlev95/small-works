@@ -52,19 +52,8 @@ button {
 }
 
 /* .todo li:hover {
-  border: 1px solid #f2f2f2;
-} */
-
-.close {
-  position: absolute;
-  display: inline-block;
-  font-size: 20px;
-  right: 23px;
-  line-height: 25px;
-  padding: 0 5px 2px 5px;
   border: 1px solid #000;
-  border-radius: 6px;
-}
+} */
 
 .todo li:not(:last-child) {
   border-bottom: 1px solid #000;
