@@ -36,6 +36,7 @@ input {
 
 input:checked + label {
   background-color: red;
+  color: ivory;
 }
 
 label {
