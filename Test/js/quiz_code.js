@@ -11,10 +11,8 @@ window.onload = function () {
         // перебираем массив со всеми вариантами ответов
         for (let key in quiz[step]['a']) {
             answer += `<li>
-                <label>
-                    <input class="answer-variant" type="radio" name=${step} value="${key}">
-                    ${quiz[step]['a'][key]}
-                </label>
+                <input id=${key} class="answer-variant" type="radio" name=${step} value="${key}">
+                <label for=${key}>${quiz[step]['a'][key]}</label>
             </li>`;
         }
 
@@ -26,7 +24,7 @@ window.onload = function () {
         if (event.target.matches('.answer-variant') && step < quiz.length) {
             document.querySelector('.btn-next').disabled = false;
         }
-    })
+    });
 
     // События клике на "Далее"
     document.querySelector('.btn-next').addEventListener("click", function(event) {
@@ -54,7 +52,7 @@ window.onload = function () {
         }
 
         document.querySelector('.btn-next').disabled = true;
-        // console.log(result);
+        console.log(result);
         showQuestion(step);
     })
 

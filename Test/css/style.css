@@ -30,6 +30,43 @@ h1 {
   list-style-type: none;
 }
 
+input {
+  display: none;
+}
+
+input:checked + label {
+  background-color: red;
+}
+
+label {
+  display: block;
+  height: 40px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  list-style-type: none;
+  border: 1px solid #000;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 7px 13px 5px;
+  letter-spacing: 0.7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+label:not(:last-child) {
+  margin-bottom: 20px;
+}
+label:hover {
+  background-color: green;
+  color: #fff;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: background-color, -webkit-transform 0.3s ease;
+  transition: background-color, -webkit-transform 0.3s ease;
+  transition: background-color, transform 0.3s ease;
+  transition: background-color, transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
 .btn-next {
   margin-left: 140px;
   width: 110px;

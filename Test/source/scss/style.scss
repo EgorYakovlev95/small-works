@@ -29,26 +29,36 @@ h1 {
     list-style-type: none;
 }
 
-.answer-variant {
-    // box-shadow: 0 0 5px rgba(0,0,0,0.5);
-    // list-style-type: none;
-    // border: 1px solid #000;
-    // height: 40px;
-    // box-sizing: border-box;
-    // padding: 7px 13px 5px;
-    // letter-spacing: 0.7px;
-    // border-radius: 5px;
-    // cursor: pointer;
-    //
-    // &:not(:last-child) {
-    //     margin-bottom: 2px;
-    // }
-    // &:hover {
-    //     background-color: green;
-    //     color: #fff;
-    //     transform: scale(1.05);
-    //     transition: background-color,transform  .3s ease;
-    // }
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: red;
+}
+
+label {
+    display: block;
+    height: 40px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    list-style-type: none;
+    border: 1px solid #000;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 7px 13px 5px;
+    letter-spacing: 0.7px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    &:hover {
+        background-color: green;
+        color: #fff;
+        transform: scale(1.05);
+        transition: background-color, transform .3s ease;
+    }
 }
 
 .btn-next {
