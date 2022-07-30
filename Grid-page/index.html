@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Grid практика</title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <header class="header">
+        <a href="#" class="header__logo"></a>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li>
+              <a href="#" class="header__link">Пункт меню</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">Пункт меню</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">Пункт меню</a>
+            </li>
+            <li>
+              <a href="#" class="header__link">Пункт меню</a>
+            </li>
+          </ul>
+
+<!-- Пробуем анимированный бургер-меню -->
+          <div class="header__burger">
+            <input type="checkbox" id="sandvich">
+            <label for="sandvich" class="pre__check">
+              <p></p>
+              <p></p>
+              <p></p>
+            </label>
+            <div class="burger__menu">
+              <ul>
+                <li><a href="#">Пункт меню 1</a></li>
+                <li><a href="#">Пункт меню 2</a></li>
+                <li><a href="#">Пункт меню 3</a></li>
+                <li><a href="#">Пункт меню 4</a></li>
+              </ul>
+            </div>
+          </div>
+<!-- Окончание анимированного бургер меню -->
+
+        </nav>
+      </header>
+      <main class="main">
+        <aside class="sidebar">
+          <nav class="sidebar__menu">
+            <ul>
+              <li>
+                <a href="#" class="sidebar__link">Пункт меню</a>
+              </li>
+              <li>
+                <a href="#" class="sidebar__link">Пункт меню</a>
+              </li>
+              <li>
+                <a href="#" class="sidebar__link">Пункт меню</a>
+              </li>
+              <li>
+                <a href="#" class="sidebar__link">Пункт меню</a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+<!-- Селект вставляем для мобилки -->
+        <div class="sidebar__2">
+          <select class="sidebar__mob">
+            <option>Пункт меню 1</option>
+            <option>Пункт меню 2</option>
+            <option>Пункт меню 3</option>
+            <option>Пункт меню 4</option>
+          </select>
+        </div>
+<!-- Окончание селекта -->
+
+        <section class="content">
+          <h1 class="content__title">GRID Layout - Практика</h1>
+          <section class="content__gallery gallery">
+            <h2 class="gallery__title">Галерея</h2>
+            <div class="gallery__items">
+              <div class="gallery__item gallery__item__big">
+                <img src="img/кот.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/кот.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/кот.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/кот.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/кот.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/кот.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/кот.jpg" alt="">
+              </div>
+              <div class="gallery__item gallery__item__big">
+                <img src="img/кот.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/кот.jpg" alt="">
+              </div>
+              <div class="gallery__item">
+                <img src="img/кот.jpg" alt="">
+              </div>
+            </div>
+          </section>
+          <section class="content__products products">
+            <h2 class="products__title">Товары</h2>
+            <div class="products__items">
+              <div class="products__item">
+                <a href="#" class="products__image"><img src="img/боб.jpg" alt=""></a>
+                <a href="#" class="products__name">Спанч Боб вместо описания товара!</a>
+                <a href="#" class="products__button">Купить</a>
+              </div>
+              <div class="products__item">
+                <a href="#" class="products__image"><img src="img/боб.jpg" alt=""></a>
+                <a href="#" class="products__name">Спанч Боб вместо описания товара!</a>
+                <a href="#" class="products__button">Купить</a>
+              </div>
+              <div class="products__item">
+                <a href="#" class="products__image"><img src="img/боб.jpg" alt=""></a>
+                <a href="#" class="products__name">Спанч Боб вместо описания товара!</a>
+                <a href="#" class="products__button">Купить</a>
+              </div>
+              <div class="products__item">
+                <a href="#" class="products__image"><img src="img/боб.jpg" alt=""></a>
+                <a href="#" class="products__name">Спанч Боб вместо описания товара!</a>
+                <a href="#" class="products__button">Купить</a>
+              </div>
+              <div class="products__item">
+                <a href="#" class="products__image"><img src="img/боб.jpg" alt=""></a>
+                <a href="#" class="products__name">Спанч Боб вместо описания товара!</a>
+                <a href="#" class="products__button">Купить</a>
+              </div>
+              <div class="products__item">
+                <a href="#" class="products__image"><img src="img/боб.jpg" alt=""></a>
+                <a href="#" class="products__name">Спанч Боб вместо описания товара!</a>
+                <a href="#" class="products__button">Купить</a>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__copy">
+          Copy, 2022
+        </div>
+        <div class="footer__text">
+          Lorem ipsum dolor sit amet.
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>
