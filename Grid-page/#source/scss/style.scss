@@ -74,7 +74,7 @@ a {
     .header__list {
         display: none;
     }
-// Попытка 1 для стилей бургера.
+
     .header__burger .burger__menu {
         margin: 0;
         padding: 20px 10px 10px 10px;
@@ -102,7 +102,6 @@ a {
     }
 
     .burger__menu ul {
-        // width: max-content;
         min-width: 150px;
 
     }
@@ -122,14 +121,6 @@ a {
         right: 40px;
         justify-items: end;
     }
-
-// Из-за этого не сворачивалось меню
-    // .header__burger {
-    //     width: 30px;
-    //     display: grid;
-    //     align-items: center;
-    //     grid-template: repeat(3, 8px) / 1fr;
-    // }
 
     .header__burger {
         position: relative;
@@ -159,11 +150,6 @@ a {
 .main {
     background-color: #3B3B3A;
     padding: 30px 15px;
-
-// Перенесено в медиа запрос, тк нужно только на десктопе
-    // grid-area: main;
-    // display: grid;
-    // grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
 }
 
 .sidebar {
